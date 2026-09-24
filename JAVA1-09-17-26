@@ -75,3 +75,215 @@ System.out.printIn("x / y ="(x / y));//output x /
 y = 3.33333335
 
 public class Main
+
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+    }System.outprint1n("\na == b:(a==b));
+    System.outprint1n("\na == b:(a==b));
+   
+int a=10, b=3;
+System. out.println(" \na == b:"(a==b));
+System. out.println("a != b: " (a != b));
+System.out println("a › b: " (a > b));
+System. out.print1n("a ‹ b: " (a ‹ b));
+System. out.println("a ‹= b: " (a ‹= b));
+System.out.print1n("a > b: " (a >= b)) ;
+ 
+// LOGICAL OPERATOR ( &&, ||, !)
+boolean p = true, q = false;
+System.out.print1n("\np && q: " (p&&q));
+System.out.print1n("p || q: " (p||q));
+System.out.print1n("!q: " (!q));
+System.out.print1n("!p: " (!p));
+ 
+// ASSIGNMENT OPERATORS ( +=, -=, *=, /=)
+int score = 50
+score += 10;
+System.out.print1n("\nscore after +=10: "+score);//60
+score *=2;
+System.out.print1n("score after *=2: "+score); 120
+ 
+// INCREMENT AND DECREMENT (post++, now, ++pre )
+int counter = 5;
+System.out.print1n("\ncounter++ (post): "+counter++);
+System.out.print1n("counter now: "+counter);6
+System.out.print1n("++counter (pre): "+ ++counter);//7
+ 
+// CONTROL FLOW (if/ else conditions , switch case statement , loops(for, while, do while))
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+            Scanner scanner = new
+      System.out.println("Hello, World!");
+    }System.outprint1n("\na == b:(a==b));
+    System.outprint1n("\na == b:(a==b));
+   
+int a=10, b=3;
+System. out.println(" \na == b:"(a==b));
+System. out.println("a != b: " (a != b));
+System.out println("a › b: " (a > b));
+System. out.print1n("a ‹ b: " (a ‹ b));
+System. out.println("a ‹= b: " (a ‹= b));
+System.out.print1n("a > b: " (a >= b)) ;
+ 
+// LOGICAL OPERATOR ( &&, ||, !)
+boolean p = true, q = false;
+System.out.print1n("\np && q: " (p&&q));
+System.out.print1n("p || q: " (p||q));
+System.out.print1n("!q: " (!q));
+System.out.print1n("!p: " (!p));
+ 
+// ASSIGNMENT OPERATORS ( +=, -=, *=, /=)
+int score = 50
+score += 10;
+System.out.print1n("\nscore after +=10: "+score);//60
+score *=2;
+System.out.print1n("score after *=2: "+score); 120
+ 
+// INCREMENT AND DECREMENT (post++, now, ++pre )
+int counter = 5;
+System.out.print1n("\ncounter++ (post): "+counter++);
+System.out.print1n("counter now: "+counter);6
+System.out.print1n("++counter (pre): "+ ++counter);//7
+ 
+// CONTROL FLOW (if/ else conditions , switch case statement , loops(for, while, do while))
+ 
+System.out.print1n("Enter your exam score: "); // prompt for user input
+int Examscore = scanner.nextInt();
+ 
+if (Exam >= 90){
+        System.out.print1n("Grade: A");
+} else if (SCORE >=80){
+         System.out.print1n("Grade: B");
+} else if (SCORE >=70){
+         System.out.print1n("Grade: C");
+} else {
+        System.out.print1n("Grade: F");
+}
+ 
+// Switch Case statement\
+System.out.print1n("\nEnter a day number (1-7): ");
+int day = scanner.nextInt();
+ 
+switch (day) {
+       case 1: System.out.print1n("Monday");p break;
+       case 2: System.out.print1n("Tuesday");p break;
+       case 3: System.out.print1n("Wednesday");p break;
+       case 4: System.out.print1n("Thursday");p break;
+       case 5: System.out.print1n("Friday");p break;
+       case 6: System.out.print1n("Saturday");p break;
+       case 7: System.out.print1n("Sunday");p break;
+       default : System.out.prin1n("Invalid")
+ 
+// loops ( for, while, do while")
+System.out.println("\nCounting 1 to 5 with a for loop: ");
+for(int i=1; i<=5; i++){
+    System.out.print(i + " ");
+}
+System.out.print();
+
+// while loops
+System.out.println("\nCounting down from 5 with a while loop: ");
+int n = 5;
+while (n>0){
+    System.out.print(n + " ");
+    n = ;
+}
+
+// do while
+System.out.println("\ndo-while example: ");
+int x=0;
+do {
+    System.out.println("x = " +x);
+    x++;
+}while (x < 3);
+
+System.out.println("\nSkipping 3 using continue, stopping at 7 using break: ");
+for (int i = 1; i <=10; i++){
+    if (i == 3)continue;
+    if (i == 7)break;
+    System.out.print(i + " ");
+}
+System.out.println();
+
+scanner. close();
+    }
+}
+
+// void funtion: perform an action, returns nothing
+static void greet(String name){
+       System.out.println("Hello," +name+ "!Welcome to java.")
+
+}
+//Recursive function call itself with a smaller problem
+static int factorial (int n){
+    if (n<=1){
+        return 1;
+    }
+    return n *factorial(n-1);
+}
+ 
+// Overload functions:
+static int multiply(int a, int b){
+    return a * b;
+}
+static double multiply(double a, double b){
+    return a * b;
+}
+    
+// Default parameter: if caller doesn't provide it, 10 is used
+static in power (int base, int exponent){
+    int result = 1;
+    for (int i = 0; i < exponent; i++){
+        result *= base;
+    }
+    return result;
+}
+static int power(int base){
+    return power(base, 2);
+}
+ 
+// Main Function
+int sum = add (5,7);
+System.out.println("5 + 7 =" + sum);
+
+double sq = square (4.5);
+
+System.out println("4.5 squared = "+ sq);
+ 
+
+greet ("Maria");
+
+System.out.println("5! = "+ factorial(5));
+ 
+System.out.ptintin("multiply(2,3)= "+multiply(2,3));
+System. out.ptintln("multiply (2.5,4.0)="+multiply (2.5,4.0));
+System.out.ptintln("power (5)" +power (5));
+System. out. ptintln("power(5,3)" +power (5,3));
+
+scanner.close();
+    }
+}
+
+// INTRO CARD
+important java.util.Scanner;
+public class Main{
+  public static void main (String[largs){.
+  Scanner scanner = new Scanner (System. in):
+
+  System. out print("What is your name? ");
+  String name = scanner nextLine();
+
+  System out print( "What is your age?.");
+  int age =Interger.parseInt(scanner.netxLine());
+  
+  System. out. prinln("\n--------intro card--------");
+
+  System. out println("Name: "+name);
+  System. out print("Age: "+age);
+  System.out.println("In 5 years," +namet "will be" +(age + 5) +" year old.");
+ 
